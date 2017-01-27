@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Utility.ModifyRegistry;
+using System.IO;
 
 namespace DragnDrop_Renamer
 {
@@ -15,12 +16,12 @@ namespace DragnDrop_Renamer
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {   //load the registry editor
-            ModifyRegistry myRegistry = new ModifyRegistry();
-
+        {
+            contractnumber1.Text = "CK";
             // Enable drag and drop for this form
             // (this can also be applied to any controls)
             // AllowDrop = true;
@@ -58,7 +59,64 @@ namespace DragnDrop_Renamer
                 this.label1.Text += File + "\n";
         }
 
+        private void CKFolderLocationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var folderDialog = new FolderBrowserDialog())
+            {
+                if (folderDialog.ShowDialog() == DialogResult.OK)
+                {
 
-    }
-    }
+                    // folderDialog.SelectedPath -- your result
+                    //load the registry editor
+                    ModifyRegistry myRegistry = new ModifyRegistry();
+                    myRegistry.Write("CK Save Location", folderDialog.SelectedPath);
+                }
+            }
+        }
 
+        private void MNFolderLocationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var folderDialog = new FolderBrowserDialog())
+            {
+                if (folderDialog.ShowDialog() == DialogResult.OK)
+                {
+
+                    // folderDialog.SelectedPath -- your result
+                    //load the registry editor
+                    ModifyRegistry myRegistry = new ModifyRegistry();
+                    myRegistry.Write("MN Save Location", folderDialog.SelectedPath);
+                }
+            }
+        }
+
+        private void Actualbutton1_Click(object sender, EventArgs e)
+        {
+            Filetype1.Text=("Actual");
+        }
+
+        private void Pickingtickets1_Click(object sender, EventArgs e)
+        {
+            Filetype1.Text = ("Picking Tickets");
+        }
+
+        private void Delnotes1_Click(object sender, EventArgs e)
+        {
+            Filetype1.Text = ("Del Notes");
+        }
+
+        private void Checkckmn1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkckmn1.Text == "CK")
+            {
+                checkckmn1.Text = "MN";
+                contractnumber1.Text = "MN";
+            }
+            else
+            {
+                checkckmn1.Text = "CK";
+                contractnumber1.Text = "CK";
+            }
+            
+        }
+    }  
+}

@@ -36,7 +36,7 @@ namespace Utility.ModifyRegistry
 			set	{ showError = value; }
 		}
 
-		private string subKey = "SOFTWARE\\" + Application.ProductName.ToUpper();
+		private string subKey = "SOFTWARE\\" + Application.ProductName;
 		/// <summary>
 		/// A property to set the SubKey value
 		/// (default = "SOFTWARE\\" + Application.ProductName.ToUpper())
@@ -83,12 +83,12 @@ namespace Utility.ModifyRegistry
 				{
 					// If the RegistryKey exists I get its value
 					// or null is returned.
-					return (string)sk1.GetValue(KeyName.ToUpper());
+					return (string)sk1.GetValue(KeyName);
 				}
 				catch (Exception e)
 				{
 					// AAAAAAAAAAARGH, an error!
-					ShowErrorMessage(e, "Reading registry " + KeyName.ToUpper());
+					ShowErrorMessage(e, "Reading registry " + KeyName);
 					return null;
 				}
 			}
@@ -113,14 +113,14 @@ namespace Utility.ModifyRegistry
 				// 'cause OpenSubKey open a subKey as read-only
 				RegistryKey sk1 = rk.CreateSubKey(subKey);
 				// Save the value
-				sk1.SetValue(KeyName.ToUpper(), Value);
+				sk1.SetValue(KeyName, Value);
 
 				return true;
 			}
 			catch (Exception e)
 			{
 				// AAAAAAAAAAARGH, an error!
-				ShowErrorMessage(e, "Writing registry " + KeyName.ToUpper());
+				ShowErrorMessage(e, "Writing registry " + KeyName);
 				return false;
 			}
 		}

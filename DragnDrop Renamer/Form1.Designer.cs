@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.salesorder1 = new DevExpress.XtraEditors.TextEdit();
             this.contractnumber1 = new DevExpress.XtraEditors.TextEdit();
-            this.filetype1 = new DevExpress.XtraEditors.TextEdit();
             this.label2 = new System.Windows.Forms.Label();
             this.checkckmn1 = new DevExpress.XtraEditors.CheckButton();
             this.salesorderlabel = new System.Windows.Forms.Label();
@@ -44,10 +43,17 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cKFolderLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mNFolderLocationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Filetype1 = new DevExpress.XtraEditors.TextEdit();
+            this.actualbutton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.pickingtickets1 = new DevExpress.XtraEditors.SimpleButton();
+            this.delnotes1 = new DevExpress.XtraEditors.SimpleButton();
+            this.contractnumber2 = new DevExpress.XtraEditors.TextEdit();
+            this.savefile1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.salesorder1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contractnumber1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filetype1.Properties)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Filetype1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contractnumber2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -67,6 +73,7 @@
             // salesorder1
             // 
             this.salesorder1.EditValue = "";
+            this.salesorder1.EnterMoveNextControl = true;
             this.salesorder1.Location = new System.Drawing.Point(47, 66);
             this.salesorder1.Name = "salesorder1";
             this.salesorder1.Properties.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
@@ -77,22 +84,14 @@
             // contractnumber1
             // 
             this.contractnumber1.EditValue = "";
-            this.contractnumber1.Location = new System.Drawing.Point(47, 119);
+            this.contractnumber1.EnterMoveNextControl = true;
+            this.contractnumber1.Location = new System.Drawing.Point(12, 119);
             this.contractnumber1.Name = "contractnumber1";
             this.contractnumber1.Properties.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.contractnumber1.Properties.Appearance.Options.UseForeColor = true;
-            this.contractnumber1.Size = new System.Drawing.Size(100, 20);
-            this.contractnumber1.TabIndex = 2;
-            // 
-            // filetype1
-            // 
-            this.filetype1.EditValue = "";
-            this.filetype1.Location = new System.Drawing.Point(47, 174);
-            this.filetype1.Name = "filetype1";
-            this.filetype1.Properties.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.filetype1.Properties.Appearance.Options.UseForeColor = true;
-            this.filetype1.Size = new System.Drawing.Size(100, 20);
-            this.filetype1.TabIndex = 3;
+            this.contractnumber1.Size = new System.Drawing.Size(29, 20);
+            this.contractnumber1.TabIndex = 8;
+            this.contractnumber1.TabStop = false;
             // 
             // label2
             // 
@@ -106,18 +105,22 @@
             // 
             // checkckmn1
             // 
-            this.checkckmn1.Location = new System.Drawing.Point(209, 177);
+            this.checkckmn1.Appearance.ForeColor = System.Drawing.Color.Yellow;
+            this.checkckmn1.Appearance.Options.UseForeColor = true;
+            this.checkckmn1.Location = new System.Drawing.Point(164, 119);
             this.checkckmn1.LookAndFeel.SkinName = "Visual Studio 2013 Dark";
             this.checkckmn1.Name = "checkckmn1";
-            this.checkckmn1.Size = new System.Drawing.Size(75, 23);
-            this.checkckmn1.TabIndex = 5;
-            this.checkckmn1.Text = "CK On";
+            this.checkckmn1.Size = new System.Drawing.Size(72, 20);
+            this.checkckmn1.TabIndex = 7;
+            this.checkckmn1.TabStop = false;
+            this.checkckmn1.Text = "CK";
+            this.checkckmn1.CheckedChanged += new System.EventHandler(this.Checkckmn1_CheckedChanged);
             // 
             // salesorderlabel
             // 
             this.salesorderlabel.AutoSize = true;
             this.salesorderlabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.salesorderlabel.Location = new System.Drawing.Point(47, 47);
+            this.salesorderlabel.Location = new System.Drawing.Point(44, 50);
             this.salesorderlabel.Name = "salesorderlabel";
             this.salesorderlabel.Size = new System.Drawing.Size(63, 13);
             this.salesorderlabel.TabIndex = 6;
@@ -132,7 +135,7 @@
             // 
             this.contractnumberlabel.AutoSize = true;
             this.contractnumberlabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.contractnumberlabel.Location = new System.Drawing.Point(50, 100);
+            this.contractnumberlabel.Location = new System.Drawing.Point(44, 103);
             this.contractnumberlabel.Name = "contractnumberlabel";
             this.contractnumberlabel.Size = new System.Drawing.Size(89, 13);
             this.contractnumberlabel.TabIndex = 7;
@@ -142,7 +145,7 @@
             // 
             this.filetypelabel.AutoSize = true;
             this.filetypelabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.filetypelabel.Location = new System.Drawing.Point(53, 155);
+            this.filetypelabel.Location = new System.Drawing.Point(44, 156);
             this.filetypelabel.Name = "filetypelabel";
             this.filetypelabel.Size = new System.Drawing.Size(50, 13);
             this.filetypelabel.TabIndex = 8;
@@ -150,6 +153,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -160,37 +164,118 @@
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cKFolderLocationToolStripMenuItem,
             this.mNFolderLocationToolStripMenuItem});
+            this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // cKFolderLocationToolStripMenuItem
             // 
+            this.cKFolderLocationToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.cKFolderLocationToolStripMenuItem.Name = "cKFolderLocationToolStripMenuItem";
             this.cKFolderLocationToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.cKFolderLocationToolStripMenuItem.Text = "CK Folder Location";
+            this.cKFolderLocationToolStripMenuItem.Click += new System.EventHandler(this.CKFolderLocationToolStripMenuItem_Click);
             // 
             // mNFolderLocationToolStripMenuItem
             // 
+            this.mNFolderLocationToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.mNFolderLocationToolStripMenuItem.Name = "mNFolderLocationToolStripMenuItem";
             this.mNFolderLocationToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.mNFolderLocationToolStripMenuItem.Text = "MN Folder Location";
+            this.mNFolderLocationToolStripMenuItem.Click += new System.EventHandler(this.MNFolderLocationToolStripMenuItem_Click);
+            // 
+            // Filetype1
+            // 
+            this.Filetype1.EnterMoveNextControl = true;
+            this.Filetype1.Location = new System.Drawing.Point(47, 172);
+            this.Filetype1.Name = "Filetype1";
+            this.Filetype1.Properties.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.Filetype1.Properties.Appearance.Options.UseForeColor = true;
+            this.Filetype1.Size = new System.Drawing.Size(100, 20);
+            this.Filetype1.TabIndex = 4;
+            this.Filetype1.TabStop = false;
+            // 
+            // actualbutton1
+            // 
+            this.actualbutton1.Appearance.ForeColor = System.Drawing.Color.LawnGreen;
+            this.actualbutton1.Appearance.Options.UseForeColor = true;
+            this.actualbutton1.Location = new System.Drawing.Point(47, 220);
+            this.actualbutton1.Name = "actualbutton1";
+            this.actualbutton1.Size = new System.Drawing.Size(75, 23);
+            this.actualbutton1.TabIndex = 4;
+            this.actualbutton1.TabStop = false;
+            this.actualbutton1.Text = "Actual";
+            this.actualbutton1.Click += new System.EventHandler(this.Actualbutton1_Click);
+            // 
+            // pickingtickets1
+            // 
+            this.pickingtickets1.Appearance.ForeColor = System.Drawing.Color.LawnGreen;
+            this.pickingtickets1.Appearance.Options.UseForeColor = true;
+            this.pickingtickets1.Location = new System.Drawing.Point(47, 275);
+            this.pickingtickets1.Name = "pickingtickets1";
+            this.pickingtickets1.Size = new System.Drawing.Size(75, 23);
+            this.pickingtickets1.TabIndex = 5;
+            this.pickingtickets1.TabStop = false;
+            this.pickingtickets1.Text = "Picking Tickets";
+            this.pickingtickets1.Click += new System.EventHandler(this.Pickingtickets1_Click);
+            // 
+            // delnotes1
+            // 
+            this.delnotes1.Appearance.ForeColor = System.Drawing.Color.LawnGreen;
+            this.delnotes1.Appearance.Options.UseForeColor = true;
+            this.delnotes1.Location = new System.Drawing.Point(47, 331);
+            this.delnotes1.Name = "delnotes1";
+            this.delnotes1.Size = new System.Drawing.Size(75, 23);
+            this.delnotes1.TabIndex = 6;
+            this.delnotes1.TabStop = false;
+            this.delnotes1.Text = "Del Notes";
+            this.delnotes1.Click += new System.EventHandler(this.Delnotes1_Click);
+            // 
+            // contractnumber2
+            // 
+            this.contractnumber2.EnterMoveNextControl = true;
+            this.contractnumber2.Location = new System.Drawing.Point(47, 119);
+            this.contractnumber2.Name = "contractnumber2";
+            this.contractnumber2.Properties.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.contractnumber2.Properties.Appearance.Options.UseForeColor = true;
+            this.contractnumber2.Size = new System.Drawing.Size(100, 20);
+            this.contractnumber2.TabIndex = 2;
+            // 
+            // savefile1
+            // 
+            this.savefile1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.savefile1.Appearance.Options.UseForeColor = true;
+            this.savefile1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
+            this.savefile1.Location = new System.Drawing.Point(380, 275);
+            this.savefile1.Name = "savefile1";
+            this.savefile1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.True;
+            this.savefile1.Size = new System.Drawing.Size(207, 94);
+            this.savefile1.TabIndex = 3;
+            this.savefile1.Text = "Save File";
             // 
             // Form1
             // 
+            this.AcceptButton = this.savefile1;
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 431);
+            this.Controls.Add(this.savefile1);
+            this.Controls.Add(this.contractnumber2);
+            this.Controls.Add(this.delnotes1);
+            this.Controls.Add(this.pickingtickets1);
+            this.Controls.Add(this.actualbutton1);
+            this.Controls.Add(this.Filetype1);
             this.Controls.Add(this.filetypelabel);
             this.Controls.Add(this.contractnumberlabel);
             this.Controls.Add(this.salesorderlabel);
             this.Controls.Add(this.checkckmn1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.filetype1);
             this.Controls.Add(this.contractnumber1);
             this.Controls.Add(this.salesorder1);
             this.Controls.Add(this.label1);
@@ -202,9 +287,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.salesorder1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.contractnumber1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filetype1.Properties)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Filetype1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contractnumber2.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,7 +302,6 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.TextEdit salesorder1;
         private DevExpress.XtraEditors.TextEdit contractnumber1;
-        private DevExpress.XtraEditors.TextEdit filetype1;
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.CheckButton checkckmn1;
         private System.Windows.Forms.Label salesorderlabel;
@@ -227,6 +312,12 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cKFolderLocationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mNFolderLocationToolStripMenuItem;
+        private DevExpress.XtraEditors.TextEdit Filetype1;
+        private DevExpress.XtraEditors.SimpleButton actualbutton1;
+        private DevExpress.XtraEditors.SimpleButton pickingtickets1;
+        private DevExpress.XtraEditors.SimpleButton delnotes1;
+        private DevExpress.XtraEditors.TextEdit contractnumber2;
+        private DevExpress.XtraEditors.SimpleButton savefile1;
     }
 }
 
