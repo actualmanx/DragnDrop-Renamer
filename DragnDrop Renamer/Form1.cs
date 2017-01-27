@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Utility.ModifyRegistry;
 
 namespace DragnDrop_Renamer
 {
@@ -17,7 +18,10 @@ namespace DragnDrop_Renamer
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {   // Enable drag and drop for this form
+        {   //load the registry editor
+            ModifyRegistry myRegistry = new ModifyRegistry();
+
+            // Enable drag and drop for this form
             // (this can also be applied to any controls)
             // AllowDrop = true;
 
