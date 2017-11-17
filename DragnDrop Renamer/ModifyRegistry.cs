@@ -36,12 +36,12 @@ namespace Utility.ModifyRegistry
 			set	{ showError = value; }
 		}
 
-		private string subKey = "SOFTWARE\\" + Application.ProductName;
-		/// <summary>
-		/// A property to set the SubKey value
-		/// (default = "SOFTWARE\\" + Application.ProductName.ToUpper())
-		/// </summary>
-		public string SubKey
+		private string subKey = "SOFTWARE\\" + "Acid\\" + Application.ProductName.ToString();
+        /// <summary>
+        /// A property to set the SubKey value
+        /// (default = "SOFTWARE\\" + Application.ProductName.ToUpper())
+        /// </summary>
+        public string SubKey
 		{
 			get { return subKey; }
 			set	{ subKey = value; }

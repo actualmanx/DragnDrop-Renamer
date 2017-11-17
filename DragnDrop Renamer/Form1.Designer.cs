@@ -257,6 +257,7 @@
             this.savefile1.Size = new System.Drawing.Size(207, 94);
             this.savefile1.TabIndex = 3;
             this.savefile1.Text = "Save File";
+            this.savefile1.Click += new System.EventHandler(this.savefile1_Click);
             // 
             // Form1
             // 
