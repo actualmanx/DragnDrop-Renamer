@@ -64,9 +64,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(350, 69);
+            this.label1.Location = new System.Drawing.Point(525, 101);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 13);
+            this.label1.Size = new System.Drawing.Size(109, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Old File Name";
             // 
@@ -74,22 +75,24 @@
             // 
             this.salesorder1.EditValue = "";
             this.salesorder1.EnterMoveNextControl = true;
-            this.salesorder1.Location = new System.Drawing.Point(47, 66);
+            this.salesorder1.Location = new System.Drawing.Point(70, 96);
+            this.salesorder1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.salesorder1.Name = "salesorder1";
             this.salesorder1.Properties.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.salesorder1.Properties.Appearance.Options.UseForeColor = true;
-            this.salesorder1.Size = new System.Drawing.Size(100, 20);
+            this.salesorder1.Size = new System.Drawing.Size(150, 26);
             this.salesorder1.TabIndex = 1;
             // 
             // contractnumber1
             // 
             this.contractnumber1.EditValue = "";
             this.contractnumber1.EnterMoveNextControl = true;
-            this.contractnumber1.Location = new System.Drawing.Point(12, 119);
+            this.contractnumber1.Location = new System.Drawing.Point(18, 174);
+            this.contractnumber1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.contractnumber1.Name = "contractnumber1";
             this.contractnumber1.Properties.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.contractnumber1.Properties.Appearance.Options.UseForeColor = true;
-            this.contractnumber1.Size = new System.Drawing.Size(29, 20);
+            this.contractnumber1.Size = new System.Drawing.Size(44, 26);
             this.contractnumber1.TabIndex = 8;
             this.contractnumber1.TabStop = false;
             // 
@@ -97,9 +100,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(350, 122);
+            this.label2.Location = new System.Drawing.Point(525, 178);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.Size = new System.Drawing.Size(113, 19);
             this.label2.TabIndex = 4;
             this.label2.Text = "New File name";
             // 
@@ -107,10 +111,10 @@
             // 
             this.checkckmn1.Appearance.ForeColor = System.Drawing.Color.Yellow;
             this.checkckmn1.Appearance.Options.UseForeColor = true;
-            this.checkckmn1.Location = new System.Drawing.Point(164, 119);
-            this.checkckmn1.LookAndFeel.SkinName = "Visual Studio 2013 Dark";
+            this.checkckmn1.Location = new System.Drawing.Point(246, 174);
+            this.checkckmn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkckmn1.Name = "checkckmn1";
-            this.checkckmn1.Size = new System.Drawing.Size(72, 20);
+            this.checkckmn1.Size = new System.Drawing.Size(108, 29);
             this.checkckmn1.TabIndex = 7;
             this.checkckmn1.TabStop = false;
             this.checkckmn1.Text = "CK";
@@ -120,9 +124,10 @@
             // 
             this.salesorderlabel.AutoSize = true;
             this.salesorderlabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.salesorderlabel.Location = new System.Drawing.Point(44, 50);
+            this.salesorderlabel.Location = new System.Drawing.Point(66, 73);
+            this.salesorderlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.salesorderlabel.Name = "salesorderlabel";
-            this.salesorderlabel.Size = new System.Drawing.Size(63, 13);
+            this.salesorderlabel.Size = new System.Drawing.Size(91, 19);
             this.salesorderlabel.TabIndex = 6;
             this.salesorderlabel.Text = "Sales Order";
             // 
@@ -135,9 +140,10 @@
             // 
             this.contractnumberlabel.AutoSize = true;
             this.contractnumberlabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.contractnumberlabel.Location = new System.Drawing.Point(44, 103);
+            this.contractnumberlabel.Location = new System.Drawing.Point(66, 151);
+            this.contractnumberlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.contractnumberlabel.Name = "contractnumberlabel";
-            this.contractnumberlabel.Size = new System.Drawing.Size(89, 13);
+            this.contractnumberlabel.Size = new System.Drawing.Size(130, 19);
             this.contractnumberlabel.TabIndex = 7;
             this.contractnumberlabel.Text = "Contract Number";
             // 
@@ -145,20 +151,23 @@
             // 
             this.filetypelabel.AutoSize = true;
             this.filetypelabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.filetypelabel.Location = new System.Drawing.Point(44, 156);
+            this.filetypelabel.Location = new System.Drawing.Point(66, 228);
+            this.filetypelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.filetypelabel.Name = "filetypelabel";
-            this.filetypelabel.Size = new System.Drawing.Size(50, 13);
+            this.filetypelabel.Size = new System.Drawing.Size(73, 19);
             this.filetypelabel.TabIndex = 8;
             this.filetypelabel.Text = "File Type";
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(698, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1047, 36);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -170,14 +179,14 @@
             this.mNFolderLocationToolStripMenuItem});
             this.fileToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 30);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // cKFolderLocationToolStripMenuItem
             // 
             this.cKFolderLocationToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.cKFolderLocationToolStripMenuItem.Name = "cKFolderLocationToolStripMenuItem";
-            this.cKFolderLocationToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.cKFolderLocationToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.cKFolderLocationToolStripMenuItem.Text = "CK Folder Location";
             this.cKFolderLocationToolStripMenuItem.Click += new System.EventHandler(this.CKFolderLocationToolStripMenuItem_Click);
             // 
@@ -185,18 +194,19 @@
             // 
             this.mNFolderLocationToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.mNFolderLocationToolStripMenuItem.Name = "mNFolderLocationToolStripMenuItem";
-            this.mNFolderLocationToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.mNFolderLocationToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.mNFolderLocationToolStripMenuItem.Text = "MN Folder Location";
             this.mNFolderLocationToolStripMenuItem.Click += new System.EventHandler(this.MNFolderLocationToolStripMenuItem_Click);
             // 
             // Filetype1
             // 
             this.Filetype1.EnterMoveNextControl = true;
-            this.Filetype1.Location = new System.Drawing.Point(47, 172);
+            this.Filetype1.Location = new System.Drawing.Point(70, 251);
+            this.Filetype1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Filetype1.Name = "Filetype1";
             this.Filetype1.Properties.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Filetype1.Properties.Appearance.Options.UseForeColor = true;
-            this.Filetype1.Size = new System.Drawing.Size(100, 20);
+            this.Filetype1.Size = new System.Drawing.Size(150, 26);
             this.Filetype1.TabIndex = 4;
             this.Filetype1.TabStop = false;
             // 
@@ -204,9 +214,10 @@
             // 
             this.actualbutton1.Appearance.ForeColor = System.Drawing.Color.LawnGreen;
             this.actualbutton1.Appearance.Options.UseForeColor = true;
-            this.actualbutton1.Location = new System.Drawing.Point(47, 220);
+            this.actualbutton1.Location = new System.Drawing.Point(70, 322);
+            this.actualbutton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.actualbutton1.Name = "actualbutton1";
-            this.actualbutton1.Size = new System.Drawing.Size(75, 23);
+            this.actualbutton1.Size = new System.Drawing.Size(112, 34);
             this.actualbutton1.TabIndex = 4;
             this.actualbutton1.TabStop = false;
             this.actualbutton1.Text = "Actual";
@@ -216,9 +227,10 @@
             // 
             this.pickingtickets1.Appearance.ForeColor = System.Drawing.Color.LawnGreen;
             this.pickingtickets1.Appearance.Options.UseForeColor = true;
-            this.pickingtickets1.Location = new System.Drawing.Point(47, 275);
+            this.pickingtickets1.Location = new System.Drawing.Point(70, 402);
+            this.pickingtickets1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pickingtickets1.Name = "pickingtickets1";
-            this.pickingtickets1.Size = new System.Drawing.Size(75, 23);
+            this.pickingtickets1.Size = new System.Drawing.Size(112, 34);
             this.pickingtickets1.TabIndex = 5;
             this.pickingtickets1.TabStop = false;
             this.pickingtickets1.Text = "Picking Tickets";
@@ -228,9 +240,10 @@
             // 
             this.delnotes1.Appearance.ForeColor = System.Drawing.Color.LawnGreen;
             this.delnotes1.Appearance.Options.UseForeColor = true;
-            this.delnotes1.Location = new System.Drawing.Point(47, 331);
+            this.delnotes1.Location = new System.Drawing.Point(70, 484);
+            this.delnotes1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.delnotes1.Name = "delnotes1";
-            this.delnotes1.Size = new System.Drawing.Size(75, 23);
+            this.delnotes1.Size = new System.Drawing.Size(112, 34);
             this.delnotes1.TabIndex = 6;
             this.delnotes1.TabStop = false;
             this.delnotes1.Text = "Del Notes";
@@ -239,11 +252,12 @@
             // contractnumber2
             // 
             this.contractnumber2.EnterMoveNextControl = true;
-            this.contractnumber2.Location = new System.Drawing.Point(47, 119);
+            this.contractnumber2.Location = new System.Drawing.Point(70, 174);
+            this.contractnumber2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.contractnumber2.Name = "contractnumber2";
             this.contractnumber2.Properties.Appearance.ForeColor = System.Drawing.SystemColors.Highlight;
             this.contractnumber2.Properties.Appearance.Options.UseForeColor = true;
-            this.contractnumber2.Size = new System.Drawing.Size(100, 20);
+            this.contractnumber2.Size = new System.Drawing.Size(150, 26);
             this.contractnumber2.TabIndex = 2;
             // 
             // savefile1
@@ -251,10 +265,11 @@
             this.savefile1.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.savefile1.Appearance.Options.UseForeColor = true;
             this.savefile1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.savefile1.Location = new System.Drawing.Point(380, 275);
+            this.savefile1.Location = new System.Drawing.Point(570, 402);
+            this.savefile1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.savefile1.Name = "savefile1";
             this.savefile1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.True;
-            this.savefile1.Size = new System.Drawing.Size(207, 94);
+            this.savefile1.Size = new System.Drawing.Size(310, 137);
             this.savefile1.TabIndex = 3;
             this.savefile1.Text = "Save File";
             this.savefile1.Click += new System.EventHandler(this.savefile1_Click);
@@ -263,9 +278,9 @@
             // 
             this.AcceptButton = this.savefile1;
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 431);
+            this.ClientSize = new System.Drawing.Size(1047, 630);
             this.Controls.Add(this.savefile1);
             this.Controls.Add(this.contractnumber2);
             this.Controls.Add(this.delnotes1);
@@ -283,6 +298,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Glow;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "DragnDrop Renamer";
             this.Load += new System.EventHandler(this.Form1_Load);
